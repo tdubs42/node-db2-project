@@ -117,4 +117,5 @@ dist
 
 .DS_Store
 .vscode
+.idea
 testing.db3
