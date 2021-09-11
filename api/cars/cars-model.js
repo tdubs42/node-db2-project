@@ -11,7 +11,7 @@ async function getById(id) {
 }
 
 async function create(car) {
-  await db('cars')
+  return await db('cars')
     .insert(car)
     .then(id => getById(id))
 }
