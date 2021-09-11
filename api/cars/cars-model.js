@@ -1,7 +1,7 @@
 const db = require('../../data/db-config')
 
 async function getAll() {
-  return await db('cars')
+  return db('cars')
 }
 
 async function getById(id) {
@@ -13,7 +13,7 @@ async function getById(id) {
 async function create(car) {
   await db('cars')
     .insert(car)
-    .then(async id => await getById(id))
+    .then(id => getById(id))
 }
 
 module.exports = {

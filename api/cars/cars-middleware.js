@@ -7,7 +7,10 @@ const checkCarId = (req, res, next) => {
   Car.getById(id)
     .then(car => {
       if (!car) {
-        next({status: 404, message: `car with id ${id} not found`})
+        next({
+          status: 404,
+          message: `car with id ${id} not found`
+        })
       }
       req.car = car
       next()
@@ -16,28 +19,54 @@ const checkCarId = (req, res, next) => {
 }
 
 const checkCarPayload = async (req, res, next) => {
-  await schema
+  return schema
     .validate(req.body)
     .then(() => {
-      req.valid = req.body
       next()
     })
     .catch(next)
 }
 
-const checkVinNumberValid = (req, res, next) => {
+const checkVinNumberValid = async (req, res, next) => {
   const valid = vinValidator.validate(req.body.vin)
-  if (!valid) {
-    next({status: 400, message: `vin ${req.body.vin} is invalid`})
-  }
-  next()
+  valid
+    ? next()
+    : next({
+      status: 400,
+      message: `vin ${req.body.vin} is invalid`
+    })
 }
 
 const checkVinNumberUnique = (req, res, next) => {
-  const {id} = req.params
-  Car.getById(id)
-    .then(() => next())
-    .catch(next({status: 400, message: `vin ${req.body.vin} already exists`}))
+  Car.getAll()
+    .then(cars => {
+      const taken = cars.find(car => car.vin
+        === req.body.vin)
+      taken
+      === undefined
+        ? next()
+        : next({
+          status: 400,
+          message: `vin ${req.body.vin} already exists`
+        })
+    })
+    .catch(next)
+  // const {id} = req.params
+  // Car.getById(id)
+  //   .then(car => {
+  //     if (car.vin
+  //       !== req.body.vin) {
+  //       next()
+  //     }
+  //     if (car.vin
+  //       === req.body.vin) {
+  //       next({
+  //         status: 400,
+  //         message: `vin ${req.body.vin} already exists`
+  //       })
+  //     }
+  //   })
+  //   .catch(next)
 }
 
 module.exports = {

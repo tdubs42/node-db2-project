@@ -3,27 +3,21 @@ const yup = require('yup')
 const schema = yup.object()
   .shape({
     vin: yup.string()
-      .required()
-      .trim()
-      .min(17)
-      .length(17)
-      .typeError('vin is missing'),
+      .required('vin is missing')
+      .trim(),
     make: yup.string()
-      .required()
+      .required('make is missing')
       .trim()
       .min(3)
-      .max(128)
-      .typeError('make is missing'),
+      .max(128),
     model: yup.string()
-      .required()
+      .required('model is missing')
       .trim()
       .min(2)
-      .max(128)
-      .typeError('model is missing'),
+      .max(128),
     mileage: yup.number()
-      .required()
-      .min(3)
-      .typeError('mileage is missing'),
+      .required('mileage is missing')
+      .min(3),
     title: yup.string()
       .notRequired()
       .trim()
