@@ -19,12 +19,12 @@ const checkCarId = (req, res, next) => {
 }
 
 const checkCarPayload = async (req, res, next) => {
-  return schema
-    .validate(req.body)
-    .then(() => {
-      next()
-    })
-    .catch(next)
+  try {
+    await schema.validate(req.body)
+    next()
+  } catch (err) {
+    next({status: 400, message: err.message})
+  }
 }
 
 const checkVinNumberValid = async (req, res, next) => {
