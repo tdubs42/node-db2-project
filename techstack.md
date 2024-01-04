@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 tdubs42/node-db2-project is built on the following main stack:
+
 - [Jest](http://facebook.github.io/jest/) – Javascript Testing Framework
 - [SQLite](http://www.sqlite.org/) – Databases
 - [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
@@ -11,11 +12,13 @@ tdubs42/node-db2-project is built on the following main stack:
 - [nodemon](http://nodemon.io/) – node.js Application Monitoring
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 tdubs42/node-db2-project is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/830/jest.png' alt='Jest'/> [Jest](http://facebook.github.io/jest/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/1071/sqlite.jpg' alt='SQLite'/> [SQLite](http://www.sqlite.org/) – Databases
 - <img width='25' height='25' src='https://img.stackshare.io/service/1163/hashtag.png' alt='ExpressJS'/> [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
@@ -25,14 +28,15 @@ tdubs42/node-db2-project is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/5577/preview.png' alt='nodemon'/> [nodemon](http://nodemon.io/) – node.js Application Monitoring
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [tdubs42/node-db2-project](https://github.com/tdubs42/node-db2-project)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|16<br/>Tools used|11/09/23 <br/>Report generated|
+|17<br/>Tools used|01/04/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -142,9 +146,9 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (6)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (7)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (6)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (7)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -154,8 +158,9 @@ Full tech stack [here](/techstack.md)
 |[helmet](https://www.npmjs.com/helmet)|v4.6.0|09/07/21|tdubs |MIT|N/A|
 |[knex](https://www.npmjs.com/knex)|v0.95.11|09/07/21|tdubs |MIT|[CVE-2016-20018](https://github.com/advisories/GHSA-4jv9-3563-23j3) (High)|
 |[sqlite3](https://www.npmjs.com/sqlite3)|v5.0.2|09/09/21|tdubs |BSD-3-Clause|[CVE-2022-43441](https://github.com/advisories/GHSA-jqv5-7xpx-qj74) (High)<br/>[CVE-2022-21227](https://github.com/advisories/GHSA-9qrh-qjmc-5w2p) (High)|
+|[yup](https://www.npmjs.com/yup)|v0.32.9|12/06/17|Luis Hernandez |MIT|N/A|
 
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
