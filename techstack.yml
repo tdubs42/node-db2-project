@@ -2,7 +2,7 @@ repo_name: tdubs42/node-db2-project
 report_id: c88b0c8c03f40b8696de7fa0ff2a010a
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:06:04+00:00'
+timestamp: '2024-02-29T18:23:50+00:00'
 requested_by: tdubs42
 provider: github
 branch: main
@@ -85,7 +85,7 @@ tools:
   last_updated_by: Luis Hernandez
   last_updated_on: 2017-12-06 17:02:48.000000000 Z
 - name: SuperTest
-  description: 'A library for testing node.js HTTP servers '
+  description: A library for testing node.js HTTP servers
   website_url: https://www.npmjs.com/package/supertest
   version: 6.1.6
   license: MIT
